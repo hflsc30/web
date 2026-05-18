@@ -7,16 +7,15 @@ import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RedissonClient;
 import org.redisson.spring.starter.RedissonAutoConfigurationCustomizer;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cache.CacheManager;
-import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 
 @Slf4j
 @RequiredArgsConstructor
 @AutoConfiguration
-@EnableCaching
 @ConditionalOnClass(RedissonClient.class)
 @EnableConfigurationProperties({RedissonProperties.class, MyCacheConfig.class})
 public class RedissonConfig {
@@ -61,6 +60,7 @@ public class RedissonConfig {
     }
 
     @Bean
+    @ConditionalOnBean(RedissonClient.class)
     public RedissonDistributeLocker redissonLocker(RedissonClient redissonClient) {
         RedissonDistributeLocker locker = new RedissonDistributeLocker(redissonClient);
         RedissonUtil.setLocker(locker);
@@ -68,6 +68,7 @@ public class RedissonConfig {
     }
 
     @Bean
+    @ConditionalOnBean(RedissonClient.class)
     public CacheManager cacheManager() {
         MySpringCacheManager cacheManager = new MySpringCacheManager(myCacheConfig);
         cacheManager.setGlobalL1CacheEnabled(myCacheConfig.isEnabled());
