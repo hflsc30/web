@@ -1,0 +1,2 @@
+com.base.config.redisson.RedissonConfig
+com.base.config.BaseAutoConfiguration
