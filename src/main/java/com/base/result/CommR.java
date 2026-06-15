@@ -8,6 +8,10 @@ import org.springframework.http.HttpStatus;
 import java.io.Serial;
 import java.io.Serializable;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

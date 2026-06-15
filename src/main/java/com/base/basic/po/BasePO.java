@@ -8,6 +8,10 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @Data
 public class BasePO<T extends Serializable> implements Serializable {
     @Serial

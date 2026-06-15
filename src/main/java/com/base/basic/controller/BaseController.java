@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.InitBinder;
 import java.beans.PropertyEditorSupport;
 import java.util.Date;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @Slf4j
 public class BaseController {
 

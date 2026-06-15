@@ -17,6 +17,10 @@ import java.nio.charset.StandardCharsets;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @NoArgsConstructor
 public class FastJson2Codec implements Codec {
 

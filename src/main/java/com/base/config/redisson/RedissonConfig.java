@@ -13,6 +13,10 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.cache.CacheManager;
 import org.springframework.context.annotation.Bean;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @Slf4j
 @RequiredArgsConstructor
 @AutoConfiguration

@@ -10,6 +10,8 @@ import java.util.List;
 
 /**
  * @Date: 2025/3/19 15:50
+  * @author base
+ * @since 2026-06-11
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

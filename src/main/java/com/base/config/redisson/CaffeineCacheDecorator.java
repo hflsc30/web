@@ -11,6 +11,8 @@ import java.util.concurrent.Callable;
 
 /**
  * Caffeine L1 缓存装饰器，包装 Spring Cache 实现两级缓存
+  * @author base
+ * @since 2026-06-11
  */
 @Slf4j
 public class CaffeineCacheDecorator implements org.springframework.cache.Cache {

@@ -36,6 +36,10 @@ import java.util.Optional;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @SuppressWarnings("unchecked")
 public class CustomServiceImpl<M extends BaseMapper<T>, T> implements CustomService<T> {
     private final ConversionService conversionService = DefaultConversionService.getSharedInstance();

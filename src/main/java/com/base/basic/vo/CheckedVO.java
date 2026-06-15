@@ -8,6 +8,8 @@ import java.io.Serializable;
 
 /**
  * @Date: 2025/6/16 16:20
+  * @author base
+ * @since 2026-06-11
  */
 @Data
 @NoArgsConstructor

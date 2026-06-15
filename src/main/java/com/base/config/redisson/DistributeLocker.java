@@ -2,6 +2,10 @@ package com.base.config.redisson;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 public interface DistributeLocker {
 
     /**

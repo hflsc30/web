@@ -2,6 +2,10 @@ package com.base.result;
 
 import org.springframework.http.HttpStatus;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 public class RUtil {
 
     /**

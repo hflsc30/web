@@ -9,6 +9,10 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 public interface TreeDAO<M, T extends TreePO> extends BaseDAO<M, T, Long> {
 
 	<V extends TreeVO> Page<V> findDataList(@Param("parentId") Long parentId, @Param("paramMap") Map<String, Object> paramMap, @Param("page") Page<V> page);

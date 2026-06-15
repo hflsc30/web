@@ -9,6 +9,10 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import java.util.List;
 
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @Data
 @ConfigurationProperties(prefix = "redisson")
 public class RedissonProperties {

@@ -10,6 +10,10 @@ import com.base.result.RUtil;
 import java.io.Serializable;
 import java.util.Collection;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @SuppressWarnings("unchecked")
 public interface BaseDAO<M, T extends BasePO<ID>, ID extends Serializable> extends BaseMapper<T> {
 

@@ -9,6 +9,10 @@ import com.base.result.PageR;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 public interface TreeService<T extends TreePO> extends BaseService<T, Long> {
 
 	<V extends TreeVO> PageR<List<V>> findDataList(Long parentId, Boolean isLazyLoad, Map<String, Object> paramMap, Page<V> page);

@@ -6,6 +6,10 @@ import lombok.EqualsAndHashCode;
 
 import java.io.Serial;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 public class TreePO extends BasePO<Long> {

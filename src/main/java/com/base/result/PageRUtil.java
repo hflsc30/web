@@ -5,6 +5,10 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 public class PageRUtil {
 
 	public static <T> PageR<List<T>> build(Page<T> page) {

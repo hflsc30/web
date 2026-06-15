@@ -11,6 +11,8 @@ import java.util.concurrent.Callable;
 
 /**
  * Spring Cache 的 RBucket（String 类型）适配器
+  * @author base
+ * @since 2026-06-11
  */
 @Slf4j
 public class StringCache implements Cache {

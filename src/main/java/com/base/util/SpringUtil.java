@@ -4,6 +4,10 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 public class SpringUtil implements ApplicationContextAware {
 
     private static volatile ApplicationContext context;

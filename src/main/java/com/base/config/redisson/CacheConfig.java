@@ -5,6 +5,8 @@ import lombok.NoArgsConstructor;
 
 /**
  * 缓存配置参数
+  * @author base
+ * @since 2026-06-11
  */
 @Data
 @NoArgsConstructor

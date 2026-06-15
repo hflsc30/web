@@ -26,6 +26,10 @@ import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 public interface CustomService<T> {
 
     /**

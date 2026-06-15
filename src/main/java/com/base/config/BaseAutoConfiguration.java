@@ -6,6 +6,10 @@ import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Bean;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @AutoConfiguration
 public class BaseAutoConfiguration {
 

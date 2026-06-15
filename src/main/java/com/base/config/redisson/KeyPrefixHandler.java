@@ -5,6 +5,8 @@ import org.redisson.config.NameMapper;
 
 /**
  * redis缓存key前缀处理
+  * @author base
+ * @since 2026-06-11
  */
 public class KeyPrefixHandler implements NameMapper {
 

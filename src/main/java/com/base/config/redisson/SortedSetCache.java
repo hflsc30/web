@@ -11,6 +11,8 @@ import java.util.concurrent.Callable;
 
 /**
  * Spring Cache 的 RScoredSortedSet 适配器
+  * @author base
+ * @since 2026-06-11
  */
 @Slf4j
 public class SortedSetCache implements Cache {

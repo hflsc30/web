@@ -10,7 +10,7 @@
     </parent>
     <groupId>io.github.hflsc30</groupId>
     <artifactId>web</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
     <name>web</name>
     <description>基础 Web 框架</description>
     <url>https://github.com/hflsc30/web</url>
@@ -111,6 +111,20 @@
             <artifactId>h2</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- jakarta-servlet-api（provided，process 模块需要） -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- webflux（optional，client 模块需要 WebClient） -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+            <optional>true</optional>
+        </dependency>
     </dependencies>
 
     <build>
@@ -166,6 +180,9 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>3.2.8</version>
+                <configuration>
+                    <executable>${project.basedir}/gpg-wrapper.bat</executable>
+                </configuration>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>

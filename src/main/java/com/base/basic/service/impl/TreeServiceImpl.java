@@ -22,6 +22,10 @@ import java.io.Serializable;
 import java.util.*;
 import java.util.stream.Collectors;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @Slf4j
 @RequiredArgsConstructor
 public class TreeServiceImpl<M extends TreeDAO<M, T>, T extends TreePO> extends BaseServiceImpl<M, T, Long> implements TreeService<T> {

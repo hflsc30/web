@@ -8,6 +8,10 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.Serializable;
 
+/**
+ * @author base
+ * @since 2026-06-11
+ */
 @Slf4j
 @NoArgsConstructor
 public class BaseServiceImpl<M extends BaseDAO<M, T, ID>, T extends BasePO<ID>, ID extends Serializable> extends CustomServiceImpl<M, T> implements BaseService<T, ID> {
